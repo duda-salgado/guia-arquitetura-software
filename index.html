@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guia visual de arquitetura de software e seus impactos na gestão de projetos.">
+  <title>Arquitetura em Foco | Guia Web</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">A</span> Arquitetura<span>em Foco</span></a>
+    <nav aria-label="Navegação principal">
+      <a class="active" href="index.html" data-pt="Início" data-en="Home">Início</a>
+      <a href="microsservicos.html" data-pt="Microsserviços" data-en="Microservices">Microsserviços</a>
+      <a href="micro-frontends.html" data-pt="Micro Frontends" data-en="Micro Frontends">Micro Frontends</a>
+      <a href="camadas.html" data-pt="Camadas" data-en="Layering">Camadas</a>
+    </nav>
+    <button class="language-button" id="languageToggle" type="button" aria-label="Alternar idioma">EN</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow" data-pt="GUIA WEB • GESTÃO DE PROJETOS" data-en="WEB GUIDE • PROJECT MANAGEMENT">GUIA WEB • GESTÃO DE PROJETOS</p>
+        <h1 data-pt="Arquitetura de software, decisões que movem projetos." data-en="Software architecture, decisions that move projects.">Arquitetura de software, decisões que movem projetos.</h1>
+        <p class="hero-description" data-pt="Explore três conceitos arquiteturais e entenda como cada escolha influencia prazo, custo, organização da equipe e riscos de um projeto." data-en="Explore three architectural concepts and learn how each choice affects schedule, cost, team organization, and project risks.">Explore três conceitos arquiteturais e entenda como cada escolha influencia prazo, custo, organização da equipe e riscos de um projeto.</p>
+        <a class="button button-primary" href="#articles" data-pt="Explorar os conceitos ↓" data-en="Explore the concepts ↓">Explorar os conceitos ↓</a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração abstrata de módulos conectados">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="node node-main">SOFTWARE</div>
+        <div class="node node-a">UI</div><div class="node node-b">API</div><div class="node node-c">DATA</div>
+        <div class="connector connector-a"></div><div class="connector connector-b"></div><div class="connector connector-c"></div>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div><p class="eyebrow" data-pt="POR QUE ISSO IMPORTA?" data-en="WHY DOES IT MATTER?">POR QUE ISSO IMPORTA?</p>
+        <h2 data-pt="Arquitetura também é gestão." data-en="Architecture is also management.">Arquitetura também é gestão.</h2></div>
+      <p data-pt="A arquitetura define como as partes de um sistema se organizam e colaboram. Essas decisões não afetam apenas o código: elas influenciam estimativas, dependências, competências necessárias, operação e capacidade de mudança." data-en="Architecture defines how system parts are organized and collaborate. These decisions affect more than code: they influence estimates, dependencies, required skills, operations, and the ability to change.">A arquitetura define como as partes de um sistema se organizam e colaboram. Essas decisões não afetam apenas o código: elas influenciam estimativas, dependências, competências necessárias, operação e capacidade de mudança.</p>
+    </section>
+
+    <section class="section" id="articles">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-pt="TRÊS PERSPECTIVAS" data-en="THREE PERSPECTIVES">TRÊS PERSPECTIVAS</p><h2 data-pt="Explore os conceitos" data-en="Explore the concepts">Explore os conceitos</h2></div>
+        <span class="muted" data-pt="3 artigos • leitura objetiva" data-en="3 articles • concise reading">3 artigos • leitura objetiva</span>
+      </div>
+      <div class="article-grid">
+        <article class="article-card card-purple">
+          <div class="card-top"><span class="number">01</span><span class="tag" data-pt="SERVIÇOS" data-en="SERVICES">SERVIÇOS</span></div>
+          <div class="mini-diagram services-diagram"><span>Pedidos</span><i></i><span>Pagamentos</span><i></i><span>Estoque</span></div>
+          <h3 data-pt="Microsserviços" data-en="Microservices">Microsserviços</h3>
+          <p data-pt="Serviços organizados por capacidades de negócio, com possibilidade de desenvolvimento e implantação independentes." data-en="Services organized around business capabilities, potentially developed and deployed independently.">Serviços organizados por capacidades de negócio, com possibilidade de desenvolvimento e implantação independentes.</p>
+          <a class="text-link" href="microsservicos.html" data-pt="Ler conceito <span aria-hidden='true'>↗</span>" data-en="Read concept <span aria-hidden='true'>↗</span>">Ler conceito <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="article-card card-blue">
+          <div class="card-top"><span class="number">02</span><span class="tag" data-pt="INTERFACE" data-en="INTERFACE">INTERFACE</span></div>
+          <div class="mini-diagram frontend-diagram"><span>Catálogo</span><span>Conta</span><span>Carrinho</span></div>
+          <h3>Micro Frontends</h3>
+          <p data-pt="Uma interface composta por partes que equipes diferentes podem desenvolver e publicar de forma independente." data-en="An interface composed of parts that different teams can develop and release independently.">Uma interface composta por partes que equipes diferentes podem desenvolver e publicar de forma independente.</p>
+          <a class="text-link" href="micro-frontends.html" data-pt="Ler conceito <span aria-hidden='true'>↗</span>" data-en="Read concept <span aria-hidden='true'>↗</span>">Ler conceito <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="article-card card-green">
+          <div class="card-top"><span class="number">03</span><span class="tag" data-pt="ORGANIZAÇÃO" data-en="STRUCTURE">ORGANIZAÇÃO</span></div>
+          <div class="layer-diagram"><span>Apresentação</span><span>Domínio</span><span>Dados</span></div>
+          <h3 data-pt="Camadas de apresentação, domínio e dados" data-en="Presentation, domain, and data layers">Camadas de apresentação, domínio e dados</h3>
+          <p data-pt="Separação de responsabilidades para facilitar compreensão, manutenção e testes." data-en="Separation of responsibilities to make understanding, maintenance, and testing easier.">Separação de responsabilidades para facilitar compreensão, manutenção e testes.</p>
+          <a class="text-link" href="camadas.html" data-pt="Ler conceito <span aria-hidden='true'>↗</span>" data-en="Read concept <span aria-hidden='true'>↗</span>">Ler conceito <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section management-callout">
+      <div class="callout-icon">↗</div>
+      <div><p class="eyebrow" data-pt="OLHAR DE GESTÃO" data-en="MANAGEMENT VIEW">OLHAR DE GESTÃO</p><h2 data-pt="Não existe arquitetura sem trade-offs." data-en="There is no architecture without trade-offs.">Não existe arquitetura sem trade-offs.</h2><p data-pt="Uma decisão pode acelerar entregas e, ao mesmo tempo, aumentar a complexidade operacional. O melhor caminho depende do contexto, do tamanho da equipe e dos objetivos do produto." data-en="A decision can speed up delivery while increasing operational complexity. The best path depends on context, team size, and product goals.">Uma decisão pode acelerar entregas e, ao mesmo tempo, aumentar a complexidade operacional. O melhor caminho depende do contexto, do tamanho da equipe e dos objetivos do produto.</p></div>
+    </section>
+
+    <section class="section team-section">
+      <p class="eyebrow" data-pt="IDENTIFICAÇÃO DO PROJETO" data-en="PROJECT INFORMATION">IDENTIFICAÇÃO DO PROJETO</p>
+      <h2 data-pt="Equipe e contexto acadêmico" data-en="Team and academic context">Equipe e Contexto Acadêmico</h2>
+      <div class="team-details">
+        <div><span data-pt="Curso" data-en="Program">Curso</span><strong>Superior de Tecnologia em Análise e Desenvolvimento de Sistemas — 4º Semestre</strong></div>
+        <div><span data-pt="Unidade curricular" data-en="Course unit">Unidade Curricular</span><strong>Gestão de Projetos</strong></div>
+        <div><span data-pt="Docente" data-en="Instructor">Docente</span><strong>Prof. Wesley Fioreze</strong></div>
+        <div><span data-pt="Integrantes" data-en="Team members">Integrantes</span><strong>Ana Clara Ferreira de Lima e Maria Eduarda Moraes Salgado</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">A</span> Arquitetura <span>em Foco</span></a><span data-pt="Projeto Acadêmico • SENAI EAD • Gestão de Projetos" data-en="Academic Project • SENAI EAD • Project Management">Projeto Acadêmico • SENAI EAD • Gestão de Projetos</span></footer>
+</body>
+</html>
